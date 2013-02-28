@@ -1,0 +1,12 @@
+diff --git ApptentiveConnect/source/Rating Flow/ATAppRatingFlow.m ApptentiveConnect/source/Rating Flow/ATAppRatingFlow.m
+index 355f3cc..b8d9189 100644
+--- ApptentiveConnect/source/Rating Flow/ATAppRatingFlow.m	
++++ ApptentiveConnect/source/Rating Flow/ATAppRatingFlow.m	
+@@ -98,6 +98,7 @@ static ATAppRatingFlow *sharedRatingFlow = nil;
+ #endif
+ 		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(preferencesChanged:) name:ATConfigurationPreferencesChangedNotification object:nil];
+ 	}
++	[self userDidUseApp];
+ 	return self;
+ }
+ 
